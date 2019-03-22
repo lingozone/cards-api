@@ -1,1 +1,1 @@
-# lingozone-cards-api
+# cards-api
