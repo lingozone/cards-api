@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  jdk:
+    image: openjdk:11-slim
+    volumes:
+      - ${PWD}:${PWD}
+    working_dir: ${PWD}
+    user: ${USER_ID}
+
+  gradle:
+    extends:
+      service: jdk
+    entrypoint: ./gradlew
